@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selvadurai C – AI &amp; Data Science | Digital Marketing Analyst</title>
+  <meta name="description"
+    content="Portfolio of Selvadurai C — Digital Marketing Analyst, AI & Data Science Enthusiast, and Python Developer. Designing AI-driven marketing intelligence." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- SCROLL PROGRESS BAR -->
+  <div id="scroll-progress" class="scroll-progress"></div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="navbar">
+    <a href="#hero" class="nav-logo">S</a>
+    <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul id="nav-menu" class="nav-menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ========== HERO — CINEMATIC SPLIT ========== -->
+  <section id="hero" class="hero">
+    <!-- Ambient glow blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Overlapping giant name -->
+    <div class="hero-big-name" aria-hidden="true">SELVADURAI</div>
+
+    <div class="hero-inner">
+      <!-- LEFT — Profile Image -->
+      <div class="hero-image-col" data-parallax>
+        <div class="hero-image-wrapper">
+          <!-- Replace src with your real photo -->
+          <img src="c:\Users\Selvadurai C\OneDrive\Desktop\selva  docs\Professional 1.png" alt="Selvadurai C" class="hero-photo"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="hero-photo-fallback">
+            <span>S</span>
+          </div>
+          <div class="hero-image-overlay"></div>
+          <div class="hero-image-glow"></div>
+        </div>
+      </div>
+
+      <!-- RIGHT — Content -->
+      <div class="hero-content-col">
+        <div class="hero-greeting-row">
+          <p class="hero-greeting">Hello, I'm <span class="accent">Selvadurai C</span></p>
+          <span class="hero-badge"><span class="badge-dot"></span>AI + Marketing Hybrid</span>
+        </div>
+        <h1 class="hero-headline">Designing <span class="gradient-text">AI-Driven</span> Marketing Intelligence</h1>
+        <p class="hero-typed" id="typed-output"></p>
+        <p class="hero-bio">
+          Computer Science Engineer passionate about Digital Marketing Analytics, AI tools, and Data Science.
+          Building intelligent marketing &amp; analytics solutions powered by AI.
+        </p>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="counter" data-target="10">0</span><span class="stat-plus">+</span>
+            <p>Projects Built</p>
+          </div>
+          <div class="hero-stat">
+            <span class="counter" data-target="2">0</span><span class="stat-plus">+</span>
+            <p>AI Systems</p>
+          </div>
+          <div class="hero-stat">
+            <span class="counter" data-target="2">0</span><span class="stat-plus">+</span>
+            <p>Internships</p>
+          </div>
+        </div>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <span>View Projects</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/selvadurai-c" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z" />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
+          <a href="https://github.com/selvadurai05" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+            </svg>
+          </a>
+          <a href="mailto:selvaduraic01@gmail.com" aria-label="Email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="section">
+    <div class="blob blob-4"></div>
+    <div class="container">
+      <h2 class="section-label reveal">About Me</h2>
+      <div class="about-grid">
+        <div class="about-image-col reveal">
+          <div class="about-image-wrapper glass-card">
+            <div class="about-avatar">
+              <span class="gradient-text">SC</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text-col reveal">
+          <p>
+            I specialize in combining <strong>Digital Marketing</strong> with <strong>Artificial Intelligence</strong>
+            and <strong>Data Analytics</strong> to create performance-driven solutions. My internship experience
+            in digital marketing helped me understand SEO, analytics, and campaign optimization, while my AI projects
+            strengthened my problem-solving and machine learning skills.
+          </p>
+          <p>
+            I believe data is the backbone of modern business strategy, and my goal is to leverage AI and analytics
+            to make smarter, measurable decisions.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon">🎯</div>
+              <div>
+                <strong>Focus</strong>
+                <span>AI-Powered Marketing</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">🔬</div>
+              <div>
+                <strong>Approach</strong>
+                <span>Data-Driven Strategy</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">💡</div>
+              <div>
+                <strong>Vision</strong>
+                <span>Intelligent Automation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-label reveal">Technical Skills</h2>
+      <div class="skills-grid">
+        <!-- Programming -->
+        <div class="skill-category glass-card reveal">
+          <div class="skill-cat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
+            </svg>
+          </div>
+          <h3>Programming &amp; Dev</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">WordPress</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">Git &amp; GitHub</span>
+          </div>
+        </div>
+        <!-- AI / Data -->
+        <div class="skill-category glass-card reveal">
+          <div class="skill-cat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83" />
+            </svg>
+          </div>
+          <h3>AI / Data Science</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Data Analysis</span>
+            <span class="skill-tag">Data Cleaning</span>
+            <span class="skill-tag">EDA</span>
+            <span class="skill-tag">Machine Learning</span>
+            <span class="skill-tag">Predictive Modeling</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">Matplotlib</span>
+            <span class="skill-tag">Seaborn</span>
+            <span class="skill-tag">Scikit-learn</span>
+            <span class="skill-tag">n8n Automation</span>
+          </div>
+        </div>
+        <!-- Tools -->
+        <div class="skill-category glass-card reveal">
+          <div class="skill-cat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path
+                d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" />
+            </svg>
+          </div>
+          <h3>Tools &amp; Platforms</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">n8n.io</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Postman</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Excel</span>
+            <span class="skill-tag">Power BI</span>
+            <span class="skill-tag">Google Analytics</span>
+            <span class="skill-tag">Search Console</span>
+            <span class="skill-tag">Meta Ads Manager</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects" class="section">
+    <div class="blob blob-5"></div>
+    <div class="container">
+      <h2 class="section-label reveal">Featured Projects</h2>
+      <div class="projects-list">
+
+        <!-- Project 1 -->
+        <article class="project-row reveal">
+          <div class="project-preview glass-card">
+            <div class="project-preview-inner">
+              <span class="project-num">01</span>
+              <div class="project-icon-large">🌾</div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Agricart – Tamil-First Farmer Marketplace</h3>
+            <p class="project-desc">
+              A voice-powered, Tamil-first marketplace platform connecting farmers directly with buyers,
+              eliminating intermediaries and improving accessibility for rural users.
+            </p>
+            <ul class="project-highlights">
+              <li>Designed system workflow and architecture</li>
+              <li>Developed frontend components &amp; backend logic</li>
+              <li>Focused on rural usability and accessibility</li>
+            </ul>
+            <div class="project-tags">
+              <span>React</span><span>JavaScript</span><span>Python</span><span>REST
+                APIs</span><span>MySQL</span><span>Figma</span>
+            </div>
+            <a href="https://github.com/selvadurai05" target="_blank" rel="noopener" class="project-link">View on GitHub
+              →</a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-row reverse reveal">
+          <div class="project-preview glass-card">
+            <div class="project-preview-inner">
+              <span class="project-num">02</span>
+              <div class="project-icon-large">⚙️</div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Predictive Maintenance AI for Vehicle Fleets</h3>
+            <p class="project-desc">
+              AI-based predictive system that analyzes vehicle data to forecast potential failures before breakdown,
+              reducing downtime and operational costs.
+            </p>
+            <ul class="project-highlights">
+              <li>Built machine learning prediction model</li>
+              <li>Implemented data preprocessing pipeline</li>
+              <li>Designed automation workflow in n8n</li>
+            </ul>
+            <div class="project-tags">
+              <span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>n8n</span><span>REST APIs</span>
+            </div>
+            <a href="https://github.com/selvadurai05" target="_blank" rel="noopener" class="project-link">View on GitHub
+              →</a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-row reveal">
+          <div class="project-preview glass-card">
+            <div class="project-preview-inner">
+              <span class="project-num">03</span>
+              <div class="project-icon-large">👁️</div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Driver Drowsiness Alert System</h3>
+            <p class="project-desc">
+              Real-time computer vision system that detects driver drowsiness using eye movement tracking
+              and facial landmark detection.
+            </p>
+            <ul class="project-highlights">
+              <li>Implemented facial detection algorithm</li>
+              <li>Developed real-time alert mechanism</li>
+              <li>Optimized detection accuracy</li>
+            </ul>
+            <div class="project-tags">
+              <span>Python</span><span>OpenCV</span><span>Machine Learning</span>
+            </div>
+            <a href="https://github.com/selvadurai05" target="_blank" rel="noopener" class="project-link">View on GitHub
+              →</a>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-row reverse reveal">
+          <div class="project-preview glass-card">
+            <div class="project-preview-inner">
+              <span class="project-num">04</span>
+              <div class="project-icon-large">🐾</div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Wild Animal Detection System</h3>
+            <p class="project-desc">
+              AI-based surveillance solution for detecting wild animals in restricted zones
+              to reduce human-animal conflicts.
+            </p>
+            <ul class="project-highlights">
+              <li>Developed animal detection model</li>
+              <li>Performed image preprocessing &amp; dataset handling</li>
+              <li>Integrated alert generation system</li>
+            </ul>
+            <div class="project-tags">
+              <span>Python</span><span>Machine Learning</span><span>Computer Vision</span>
+            </div>
+            <a href="https://github.com/selvadurai05" target="_blank" rel="noopener" class="project-link">View on GitHub
+              →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <h2 class="section-label reveal">Experience</h2>
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">Mar 2025 – Jun 2025</span>
+            <h3>Web Design Intern</h3>
+            <h4>Weblogick Solution</h4>
+            <ul>
+              <li>Designed responsive websites using HTML, CSS, WordPress</li>
+              <li>Assisted in UI/UX planning using Figma</li>
+              <li>Optimized user experience and site performance</li>
+              <li>Implemented client-specific requirements</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">Jul 2023 – May 2024</span>
+            <h3>Digital Marketing Intern</h3>
+            <h4>Techsnapie Solution</h4>
+            <ul>
+              <li>Managed social media marketing campaigns</li>
+              <li>Performed SEO and keyword research</li>
+              <li>Analyzed website traffic using Google Analytics &amp; Search Console</li>
+              <li>Supported paid ad and lead generation strategies</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2 class="section-label reveal">Education</h2>
+      <div class="education-card glass-card reveal">
+        <div class="edu-decoration">
+          <span class="edu-year-big">2026</span>
+        </div>
+        <div class="edu-info">
+          <h3>Bachelor of Engineering (B.E.)</h3>
+          <h4>Computer Science and Engineering</h4>
+          <p class="edu-school">SNS College of Technology</p>
+          <div class="edu-meta">
+            <span class="edu-badge">2022 – 2026</span>
+            <span class="edu-badge accent-badge">CGPA: 8.0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CERTIFICATIONS ========== -->
+  <section id="certifications" class="section section-alt">
+    <div class="container">
+      <h2 class="section-label reveal">Certifications</h2>
+      <div class="certs-scroll reveal">
+        <div class="cert-card glass-card">
+          <div class="cert-icon-wrap"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.5">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+              <polyline points="22 4 12 14.01 9 11.01" />
+            </svg></div>
+          <h4>Introduction to Generative AI</h4>
+          <p>AWS Academy</p>
+        </div>
+        <div class="cert-card glass-card">
+          <div class="cert-icon-wrap"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.5">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+              <polyline points="22 4 12 14.01 9 11.01" />
+            </svg></div>
+          <h4>Azure AI Fundamentals (AI-900)</h4>
+          <p>Microsoft</p>
+        </div>
+        <div class="cert-card glass-card">
+          <div class="cert-icon-wrap"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.5">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+              <polyline points="22 4 12 14.01 9 11.01" />
+            </svg></div>
+          <h4>Industry 4.0 &amp; IIoT</h4>
+          <p>NPTEL</p>
+        </div>
+        <div class="cert-card glass-card">
+          <div class="cert-icon-wrap"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.5">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+              <polyline points="22 4 12 14.01 9 11.01" />
+            </svg></div>
+          <h4>Privacy &amp; Security in Online Social Media</h4>
+          <p>NPTEL</p>
+        </div>
+        <div class="cert-card glass-card">
+          <div class="cert-icon-wrap"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.5">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+              <polyline points="22 4 12 14.01 9 11.01" />
+            </svg></div>
+          <h4>Programming Fundamentals – C, Java, Python</h4>
+          <p>Certification</p>
+        </div>
+        <div class="cert-card glass-card">
+          <div class="cert-icon-wrap"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.5">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+              <polyline points="22 4 12 14.01 9 11.01" />
+            </svg></div>
+          <h4>Data Science Foundations</h4>
+          <p>Certification</p>
+        </div>
+        <div class="cert-card glass-card">
+          <div class="cert-icon-wrap"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.5">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+              <polyline points="22 4 12 14.01 9 11.01" />
+            </svg></div>
+          <h4>Hackathon &amp; Technical Quiz</h4>
+          <p>Unstop</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section">
+    <div class="blob blob-6"></div>
+    <div class="container">
+      <h2 class="section-label reveal">Let's Connect</h2>
+      <p class="contact-subtitle reveal">I'm always open to discussing new opportunities, collaborations, or a friendly
+        chat about AI and data.</p>
+      <div class="contact-cards reveal">
+        <a href="mailto:selvaduraic01@gmail.com" class="contact-card glass-card">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+          <strong>Email</strong>
+          <span>selvaduraic01@gmail.com</span>
+        </a>
+        <a href="tel:+917094205968" class="contact-card glass-card">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path
+              d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+          </svg>
+          <strong>Phone</strong>
+          <span>7094205968</span>
+        </a>
+        <a href="https://www.linkedin.com/in/selvadurai-c" target="_blank" rel="noopener"
+          class="contact-card glass-card">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z" />
+            <rect x="2" y="9" width="4" height="12" />
+            <circle cx="4" cy="4" r="2" />
+          </svg>
+          <strong>LinkedIn</strong>
+          <span>selvadurai-c</span>
+        </a>
+        <a href="https://github.com/selvadurai05" target="_blank" rel="noopener" class="contact-card glass-card">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+          </svg>
+          <strong>GitHub</strong>
+          <span>selvadurai05</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+    <div class="container footer-inner">
+      <a href="#hero" class="footer-logo">S</a>
+      <p>&copy; 2026 Selvadurai C &mdash; Built with passion &amp; data.</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/selvadurai-c" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/selvadurai05" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:selvaduraic01@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
